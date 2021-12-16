@@ -40,8 +40,11 @@ namespace ConsoleApp1
                 get { return name; }
                 set
                 {
-                    //todo驗證Name的正確性
-
+                    foreach(IValidator validator in Validators)
+                    {
+                        if (validator.IsValid(value) == false) throw new Exception("沒通過驗證");
+                    }
+                    name = value;
                 }
 
             }
