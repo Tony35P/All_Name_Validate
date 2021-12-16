@@ -15,6 +15,10 @@ namespace ConsoleApp1
                 new RequiredValidator(),
             };
 
+            var member = new Member { Validators = validators };
+            member.Name = null;
+            Console.WriteLine(member.Name);
+
         }
         public interface IValidator
         {
