@@ -47,9 +47,14 @@ namespace ConsoleApp1
         }
         public class MaxlengthValidator : IValidator
         {
+            private readonly int maxlength;
+            public MaxlengthValidator(int maxLength)
+            {
+                this.maxlength = maxLength;
+            }
             public bool IsValid(string value)
             {
-                throw new NotImplementedException();
+                
             }
         }
         public class Member
