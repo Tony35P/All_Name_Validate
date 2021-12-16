@@ -13,12 +13,13 @@ namespace ConsoleApp1
             List<IValidator> validators = new List<IValidator>()
             {
                 new RequiredValidator(),
+                new MaxlengthValidator(12)
             };
 
             var member = new Member { Validators = validators };
             try
             {
-                member.Name = null;
+                member.Name = "35435435435435464";
                 Console.WriteLine(member.Name);
             }catch(Exception ex)
             {
