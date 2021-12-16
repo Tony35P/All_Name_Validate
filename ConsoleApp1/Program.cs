@@ -12,9 +12,25 @@ namespace ConsoleApp1
         {
 
         }
+        public interface IValidator
+        {
+            bool IsValid(string value);
+        }
         public class Member
         {
-            public string Name { get; set; }
+            // Name 的所有驗證規則
+            public List<IValidator> Validators { get; set; }
+            private string name;
+            public string Name
+            {
+                get { return name; }
+                set
+                {
+                    //todo驗證Name的正確性
+
+                }
+
+            }
         }
     }
 }
