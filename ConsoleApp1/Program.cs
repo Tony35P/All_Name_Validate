@@ -20,7 +20,14 @@ namespace ConsoleApp1
         {
             public bool IsValid(string value)
             {
-                throw new NotImplementedException();
+                if(string.IsNullOrEmpty(value))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
         }
         public class Member
