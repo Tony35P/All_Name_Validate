@@ -22,7 +22,7 @@ namespace ConsoleApp1
             {
                 if(string.IsNullOrEmpty(value))
                 {
-                    return false;
+                    throw new Exception("必填");
                 }
                 else
                 {
