@@ -16,6 +16,13 @@ namespace ConsoleApp1
         {
             bool IsValid(string value);
         }
+        public class RequiredValidator : IValidator
+        {
+            public bool IsValid(string value)
+            {
+                throw new NotImplementedException();
+            }
+        }
         public class Member
         {
             // Name 的所有驗證規則
