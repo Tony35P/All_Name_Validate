@@ -54,6 +54,7 @@ namespace ConsoleApp1
             }
             public bool IsValid(string value)
             {
+                if (string.IsNullOrEmpty(value)) return true;
                 if (value.Length > maxlength)
                 {
                     throw new Exception("長度不能超過" + maxlength);
