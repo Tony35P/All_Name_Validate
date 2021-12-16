@@ -16,8 +16,15 @@ namespace ConsoleApp1
             };
 
             var member = new Member { Validators = validators };
-            member.Name = null;
-            Console.WriteLine(member.Name);
+            try
+            {
+                member.Name = null;
+                Console.WriteLine(member.Name);
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Name錯誤, 原因: " + ex.Message);
+            }
+            
 
         }
         public interface IValidator
