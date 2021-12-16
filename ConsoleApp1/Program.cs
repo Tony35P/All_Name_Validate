@@ -12,5 +12,9 @@ namespace ConsoleApp1
         {
 
         }
+        public class Member
+        {
+            public string Name { get; set; }
+        }
     }
 }
