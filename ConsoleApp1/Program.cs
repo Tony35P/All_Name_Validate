@@ -45,6 +45,13 @@ namespace ConsoleApp1
                 }
             }
         }
+        public class MaxlengthValidator : IValidator
+        {
+            public bool IsValid(string value)
+            {
+                throw new NotImplementedException();
+            }
+        }
         public class Member
         {
             // Name 的所有驗證規則
