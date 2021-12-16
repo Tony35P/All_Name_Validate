@@ -24,8 +24,7 @@ namespace ConsoleApp1
             }catch(Exception ex)
             {
                 Console.WriteLine("Name錯誤, 原因: " + ex.Message);
-            }
-            
+            }           
 
         }
         public interface IValidator
